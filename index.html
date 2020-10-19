@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сайт Егора Худолеева</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container-construction">
+                <img class="construction" src="img/underconst.jpg" alt="Ведутся работы">
+            </div>
+            <img class="ribbon ribbon-up" src="img/ribbon.png" alt="Лента">
+            <img class="ribbon ribbon-down" src="img/ribbon.png" alt="Лента">
+            <p>Егор Худолеев, 2020</p>
+        </section>
+    </main>
+    <script>
+        let vh = window.innerHeight * 0.01;
+
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+        window.addEventListener('resize', () => {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        });
+    </script>
+</body>
+</html>
