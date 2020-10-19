@@ -1,8 +1,7 @@
 body{
+    height: 768px;
     font-family: Arial, sans-serif;
     overflow: hidden;
-    position: relative;
-    height: 768px;
 }
 
 @media (min-height: 700px) {
@@ -17,11 +16,12 @@ main {
 
 section {
     display: flex;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    min-height: 500px;
     color: #000;
 }
 
@@ -42,14 +42,14 @@ section {
 }
 
 .ribbon-up {
-    top: 45px;
+    top: 100px;
     left: -100px;
     transform: rotate(-56deg);
 }
 
 .ribbon-down {
-    bottom: 60px;
-    right: -86px;
+    right: -52px;
+    bottom: 32px;
     transform: rotate(145deg);
 }
 
